@@ -2,6 +2,12 @@ import { SubTitle } from "../SubTitle";
 import { TextCard } from "../TextComponents";
 import { WrapperContainer1 } from "../WrapperContainers";
 
+/**
+ * Componente encargado de contener la informacion almacenada en el estado
+ *
+ * @param {object} [values] -- Estado values que contiene las variables de almacenamiento del titulo y texto
+ * @returns {JSX}
+ */
 const DisplayInfoContainer = ({values={}}) => {
     return(
         <WrapperContainer1>

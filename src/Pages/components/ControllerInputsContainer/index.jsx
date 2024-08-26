@@ -2,6 +2,13 @@ import { handleInputChange } from "../../../utils/handleInputChange";
 import { InputCard, TextAreaCard } from "../InputsCards";
 import { WrapperContainer1 } from "../WrapperContainers";
 
+/**
+ * Componente encargado de contener los inputs del titulo y texto
+ *
+ * @param {object} [values] -- Estado values que contiene las variables de almacenamiento del titulo y texto
+ * @param {Function} [setValues] -- Funcion encargada de actualizar el estado
+ * @returns {JSX}
+ */
 const ControllerInputsContainer = ({values={}, setValues}) => {
     return(
         <WrapperContainer1>

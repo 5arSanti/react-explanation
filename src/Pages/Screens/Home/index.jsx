@@ -1,17 +1,29 @@
+// React
 import React from "react";
-import { Title } from "../../components/Title";
 
+// Contexto
+import { AppContext } from "../../../Context";
+
+// Componentes
+import { Title } from "../../components/Title";
 import { ControllerInputsContainer } from "../../components/ControllerInputsContainer";
 import { DisplayInfoContainer } from "../../components/DisplayInfoContainer";
 import { WrapperContainer1, WrapperContainer2 } from "../../components/WrapperContainers";
 import { AllInfoGridContainer } from "../../components/AllInfoContainer";
 import { TextCard } from "../../components/TextComponents";
-import { AppContext } from "../../../Context";
 import { SubTitle } from "../../components/SubTitle";
 
+
+/**
+ * Componente Home utilizado para la pantalla Home
+ *
+ * @returns {JSX}
+ */
 const Home = () => {
+    // Uso del contexto
     const context = React.useContext(AppContext);
 
+    // Creacion de un estado
     const [values, setValues] = React.useState({
         title: null,
         text: null,

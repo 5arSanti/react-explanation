@@ -1,4 +1,13 @@
+// Estilos
 import "./styles.css";
+
+/**
+ * Componente SubTitle, que cuenta con los estilos predefinidos de los subtitulos 
+ * @param {*} children -- Recibe un hijo
+ * @param {string} [textAlign] -- Configuracion del estilo textAlign. Valor predeterminado: "start"
+
+ * @returns {JSX}
+ */
 
 const SubTitle = ({children, textAlign = "start"}) => {
 

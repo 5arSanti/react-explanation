@@ -1,13 +1,18 @@
-import React from 'react'
-import { HashRouter, Navigate, useLocation, useRoutes } from 'react-router-dom'
+// Dependencias
+import { HashRouter, Navigate, useRoutes } from 'react-router-dom'
 
+// CSS
 import './App.css';
 
+// Proveedor de contexto
 import { AppProvider } from '../../Context';
+
+// Pantallas
 import { Home } from '../Screens/Home';
 
-const AppRoutes = () => {
 
+// Rutas
+const AppRoutes = () => {
   let routes = useRoutes([
 		{path: "/home", element: <Home/>},
 
@@ -17,8 +22,14 @@ const AppRoutes = () => {
   return routes;
 }
 
+
+/**
+ * Aplicacion
+ *
+ * @returns {JSX}
+ */
 const App = () => {
-  	return (
+  	return(
 		<AppProvider>
 			<HashRouter>
 				<AppRoutes/>
@@ -26,6 +37,7 @@ const App = () => {
 		</AppProvider>
   	);
 }
+
 
 export default App;
 
